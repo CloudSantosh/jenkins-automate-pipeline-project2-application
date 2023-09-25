@@ -29,9 +29,9 @@ Overall, this project demonstrates how to integrate various tools commonly used 
 
 1. **[Install Jenkins & Ansible & Maven ](https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-infra)**
 
-2. **[Install Sonarqube](https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-infra)**
+2. **[Install Sonarqube](https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-infra#-ansible-installation-)**
 
-3. **[Install Kubernetes Cluster](https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-infra)**
+3. **[Install Kubernetes Cluster](https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-infra#kubernetes-cluster-installation)**
 
 4. **[Git Account](https://github.com/)**
 
@@ -54,7 +54,7 @@ Login Jenkins > New Item > project-1 > Pipeline > OK
     	               SCM: Git
 
     	                 Repositories:
-    	                      Repository URL: https://github.com/sunnydevops2022/devops_real_time_project_1.git
+    	                      Repository URL: https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application.git
 
     	                 Script Path: Jenkinsfile
 
@@ -177,7 +177,7 @@ Github > Repository > Settings > Webhooks > Add Webhooks >
 Payload UR : http://<jenkins_ip>:8080/github-webhook/
 Content type : application/json
 
-    					Just the push event.
+Just the push event.
 
 +++++++++++++++ JENKINS SERVER ++++++++++++++++++++++
 
