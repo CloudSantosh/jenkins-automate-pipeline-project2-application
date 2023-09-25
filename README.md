@@ -1,6 +1,6 @@
 # Jenkins Pipeline for java base web application using Maven, SonarQube, Ansible and (EKS) Kubernetes
 
-<img src="https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application/blob/main/images/overview.png" width="600" hight="100">
+<img src="https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application/blob/main/images/overview.png" width="600" height="300">
 
 The project involves building and deploying a Java application using a CI/CD pipeline. Here are the steps involved:
 
@@ -191,6 +191,6 @@ GitHub hook trigger for GITScm polling
 # Part-3
 
 The result of the project looks likes below
-<img src="https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application/blob/main/images/pipeline.png" width="600" hight="100">
+<img src="https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application/blob/main/images/pipeline.png" width="700" height="400">
 
-<img src="https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application/blob/main/images/console.png" width="600" hight="100">
+<img src="https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application/blob/main/images/console.png" width="700" height="400">
