@@ -55,7 +55,7 @@ pipeline {
 
         } 
         }
-      /*         
+             
    
     
         stage('COPY JAR & DOCKERFILE') {
@@ -63,7 +63,7 @@ pipeline {
                 sh 'ansible-playbook $WORKSPACE/playbooks/create_directory.yml'
             }
         }
-   
+    /* 
         stage('PUSH IMAGE ON DOCKERHUB') {
             environment {
             dockerhub_user = credentials('DOCKERHUB_USER')            
