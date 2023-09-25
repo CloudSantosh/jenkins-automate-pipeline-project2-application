@@ -2,17 +2,17 @@
 
 The project involves building and deploying a Java application using a CI/CD pipeline. Here are the steps involved:
 
-Version Control: The code is stored in a version control system such as Git, and hosted on GitHub. The code is organized into branches such as the main or development branch.
+**Version Control:** The code is stored in a version control system such as Git, and hosted on GitHub. The code is organized into branches such as the main or development branch.
 
-Continuous Integration: Jenkins is used as the CI server to build the application. Whenever there is a new code commit, Jenkins automatically pulls the code from GitHub, builds it using Maven, and runs automated tests. If the tests fail, the build is marked as failed and the team is notified.
+**Continuous Integration:** Jenkins is used as the CI server to build the application. Whenever there is a new code commit, Jenkins automatically pulls the code from GitHub, builds it using Maven, and runs automated tests. If the tests fail, the build is marked as failed and the team is notified.
 
-Code Quality: SonarQube is used to analyse the code and report on code quality issues such as bugs, vulnerabilities, and code smells. The SonarQube analysis is triggered as part of the Jenkins build pipeline.
+**Code Quality:** SonarQube is used to analyse the code and report on code quality issues such as bugs, vulnerabilities, and code smells. The SonarQube analysis is triggered as part of the Jenkins build pipeline.
 
-Containerization: Docker is used to containerizing the Java application. The Docker file is stored in the Git repository along with the source code. The Docker file specifies the environment and dependencies required to run the application.
+**Containerization:** Docker is used to containerizing the Java application. The Docker file is stored in the Git repository along with the source code. The Docker file specifies the environment and dependencies required to run the application.
 
-Container Registry: The Docker image is pushed to Docker Hub, a public or private Docker registry. The Docker image can be versioned and tagged for easy identification.
+**Container Registry:** The Docker image is pushed to Docker Hub, a public or private Docker registry. The Docker image can be versioned and tagged for easy identification.
 
-Continuous Deployment: Webhooks is used to automate the deployment of the containerized application to Kubernetes. Whenever a new version of the application image is pushed to the Git repository, Webhook will automatically deploy it to the Kubernetes cluster.
+**Continuous Deployment:** Webhooks is used to automate the deployment of the containerized application to Kubernetes. Whenever a new version of the application image is pushed to the Git repository, Webhook will automatically deploy it to the Kubernetes cluster.
 
 Overall, this project demonstrates how to integrate various tools commonly used in software development to streamline the development process, improve code quality, and automate deployment
 
@@ -25,7 +25,7 @@ Configure all below pre-requisites for project.
 
 ### Overview of project
 
-<img src="/images/project.png" width="600" hight="100">
+<img src="images/project.png" width="600" hight="100">
 
 <br/>
 <br/>
@@ -170,7 +170,6 @@ Payload UR : http://<jenkins_ip>:8080/github-webhook/
 Content type : application/json
 
     					Just the push event.
-
 
 +++++++++++++++ JENKINS SERVER ++++++++++++++++++++++
 
