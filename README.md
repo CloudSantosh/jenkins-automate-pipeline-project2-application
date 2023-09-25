@@ -1,5 +1,7 @@
 # Jenkins Pipeline for java base web application using Maven, SonarQube, Ansible and (EKS) Kubernetes
 
+<img src="https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application/blob/main/images/overview.png" width="600" hight="100">
+
 The project involves building and deploying a Java application using a CI/CD pipeline. Here are the steps involved:
 
 **Version Control:** The code is stored in a version control system such as Git, and hosted on GitHub. The code is organized into branches such as the main or development branch.
@@ -16,18 +18,12 @@ The project involves building and deploying a Java application using a CI/CD pip
 
 Overall, this project demonstrates how to integrate various tools commonly used in software development to streamline the development process, improve code quality, and automate deployment
 
-Configure all below pre-requisites for project.
-
-## Overview of project
-
-<img src="https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application/blob/main/images/overview.png" width="600" hight="100">
-
 <br/>
 <br/>
 
-## +++++++++++++++++++++++++++ PART-2 ++++++++++++++++++++++++++++
+# Part 1
 
-### Configure all below pre-requisites for project.
+## Configure all below pre-requisites for project.
 
 <br/>
 
@@ -44,7 +40,7 @@ Configure all below pre-requisites for project.
 <br/>
 <br/>
 
-## +++++++++++++++++++++++++++ PART-3 ++++++++++++++++++++++++++++
+# PART-2
 
 ### Configure jenkins pipeline job.
 
@@ -117,7 +113,8 @@ systemctl restart sshd.service
 cat /etc/ansible/hosts
 
 > /etc/ansible/hosts
-> cat /etc/ansible/hosts
+
+cat /etc/ansible/hosts
 
 vim /etc/ansible/hosts
 
@@ -125,11 +122,18 @@ vim /etc/ansible/hosts
 <kubernetes_ip>
 
 cat /etc/ansible/hosts
+
+
 su - jenkins
+
 ansible -m ping kubernetes -u root
+
 ssh root@<kubernetes_ip>
+
 ssh-keygen
+
 ssh-copy-id root@<kubernetes_ip>
+
 ssh root@<kubernetes_ip>
 
 ansible -m ping kubernetes -u root
@@ -186,8 +190,6 @@ GitHub hook trigger for GITScm polling
 <br/>
 <br/>
 <br/>
-
-## `*************************   EOF   *************************`
 
 ```
 
