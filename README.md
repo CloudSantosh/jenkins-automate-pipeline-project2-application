@@ -29,7 +29,7 @@ Overall, this project demonstrates how to integrate various tools commonly used 
 
 1. **[Install Jenkins & Ansible & Maven ](https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-infra)**
 
-2. **[Install Sonarqube](https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-infra#-ansible-installation-)**
+2. **[Install Sonarqube](https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-infra#sonarqube-installation)**
 
 3. **[Install Kubernetes Cluster](https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-infra#kubernetes-cluster-installation)**
 
