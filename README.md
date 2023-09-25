@@ -187,3 +187,10 @@ GitHub hook trigger for GITScm polling
 ```
 
 <br/>
+
+# Part-3
+
+The result of the project looks likes below
+<img src="https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application/blob/main/images/pipeline.png" width="600" hight="100">
+
+<img src="https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application/blob/main/images/console.png" width="600" hight="100">
