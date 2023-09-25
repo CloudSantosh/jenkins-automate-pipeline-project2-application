@@ -2,12 +2,12 @@
 - name: DEPLOYMENT ON EKS
   hosts: kubernetes
   remote_user: root
-  tasks:  
+  tasks:
     - name: CREATE PLAYBOOKS DIR ON EKS CLUSTER
       file:
         path: /opt/playbooks/
         state: directory
-        mode: "0755"      
+        mode: "0755"
 
     - name: COPY DEPLOYMENT FILE
       copy:
@@ -16,22 +16,22 @@
 
     - name: CHECK FILE
       shell: ls -l /opt/playbooks/
-      register: copy        
+      register: copy
 
-    - name: DEPLOYMENT FILE COPY STATUS      
+    - name: DEPLOYMENT FILE COPY STATUS
       debug:
-        var: copy.stdout_lines              
-        
+        var: copy.stdout_lines
+
     - name: DEPLOYMENT ON K8 CLUSTER
       shell: kubectl apply -f /opt/playbooks/dep_svc.yml
       register: deployment
 
-    - name: DEPLOYMENT STATUS      
+    - name: DEPLOYMENT STATUS
       debug:
         var: deployment.stdout_lines
 
     - name: WAITING FOR GET DEPLOYMENT STATUS
-      shell: sleep 100      
+      shell: sleep 500
 
     - name: STATUS OF DEPLOYMENT
       shell: kubectl get pod
