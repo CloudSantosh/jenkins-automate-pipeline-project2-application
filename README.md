@@ -187,10 +187,3 @@ GitHub hook trigger for GITScm polling
 ```
 
 <br/>
-<br/>
-<br/>
-<br/>
-
-```
-
-```
