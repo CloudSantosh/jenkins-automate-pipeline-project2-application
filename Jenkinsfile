@@ -14,7 +14,7 @@ pipeline {
 
         stage('CODE CHECKOUT') {
             steps {
-                git 'https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application.git'
+                git branch: 'main', url: 'https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application.git'
             }
         }
 
