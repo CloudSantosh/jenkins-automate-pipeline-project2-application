@@ -20,7 +20,7 @@ Configure all below pre-requisites for project.
 
 ## Overview of project
 
-<img src="https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application/tree/main/images/project.png" width="600" hight="100">
+<img src="https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application/tree/main/images/overview.png" width="600" hight="100">
 
 <br/>
 <br/>
