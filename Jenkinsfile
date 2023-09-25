@@ -14,7 +14,7 @@ pipeline {
 
         stage('CODE CHECKOUT') {
             steps {
-                git 'https://github.com/CloudSantosh/application.git'
+                git 'https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application.git'
             }
         }
 
@@ -41,7 +41,7 @@ pipeline {
             steps {
                 sh 'mvn clean verify sonar:sonar -e -Dsonar.projectName=$JOB_NAME \
                     -Dsonar.projectKey=$JOB_NAME \
-                    -Dsonar.host.url=http://3.145.90.33:9000 \
+                    -Dsonar.host.url=http://3.144.254.25:9000 \
                     -Dsonar.login=${sonar_token}'
             }
 
