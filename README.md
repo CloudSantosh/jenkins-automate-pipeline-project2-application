@@ -124,13 +124,14 @@ vim /etc/ansible/hosts
 cat /etc/ansible/hosts
 
 
-su - jenkins
+su - jenkins 
+(Here we need to create ssh-key for jenkins users therefore we need to switch to jenkins user as when pipeline is executed as jenkins users) 
 
 ansible -m ping kubernetes -u root
 
 ssh root@<kubernetes_ip>
 
-ssh-keygen
+ssh-keygen 
 
 ssh-copy-id root@<kubernetes_ip>
 
