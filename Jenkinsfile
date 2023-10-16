@@ -68,7 +68,7 @@ pipeline {
             dockerhub_pass = credentials('DOCKERHUB_PASS')
             }    
             steps {
-                sh 'ansible-playbook playbooks/push_dockerhub.yml \
+                sh 'ansible-playbook playbooks/push_dockerhub.yml -vvvv\
                     --extra-vars "JOB_NAME=$JOB_NAME" \
                     --extra-vars "BUILD_ID=$BUILD_ID" \
                     --extra-vars "dockerhub_user=$dockerhub_user" \
