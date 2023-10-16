@@ -101,7 +101,7 @@ Create
 ```
 
 +++++++++++++++ KUBERNETES SERVER ++++++++++++++++++++++
-
+(Allowing password authentication)
 $ passwd root
 $ cp -r /etc/ssh/sshd_config /etc/ssh/sshd_config_orig
 $ sed -i "s/#PermitRootLogin prohibit-password/PermitRootLogin yes/g" /etc/ssh/sshd_config
@@ -124,20 +124,17 @@ $ vim /etc/ansible/hosts
 $ cat /etc/ansible/hosts
 
 
-$ su - jenkins 
-( Here we need to create ssh-key for jenkins users therefore 
- we need to switch to jenkins user as when pipeline 
- is executed as jenkins users ) 
+$ su - jenkins // switching to jenkins user as pipeline is executed as jenkins user 
 
 $ ansible -m ping kubernetes -u root
 
 $ ssh root@<kubernetes_ip>
 
-$ ssh-keygen 
+$ ssh-keygen //create ssh keypair for jenkins user
 
-$ ssh-copy-id root@<kubernetes_ip>
+$ ssh-copy-id root@<kubernetes_ip>  // Copying public keypair to the kubnernets server 
 
-$ ssh root@<kubernetes_ip>
+$ ssh root@<kubernetes_ip> //Allow ssh login 
 
 $ ansible -m ping kubernetes -u root
 
