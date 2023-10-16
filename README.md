@@ -102,42 +102,44 @@ Create
 
 +++++++++++++++ KUBERNETES SERVER ++++++++++++++++++++++
 
-passwd root
-cp -r /etc/ssh/sshd_config /etc/ssh/sshd_config_orig
-sed -i "s/#PermitRootLogin prohibit-password/PermitRootLogin yes/g" /etc/ssh/sshd_config
-sed -i "s/PasswordAuthentication no/PasswordAuthentication yes/g" /etc/ssh/sshd_config
-systemctl restart sshd.service
+$ passwd root
+$ cp -r /etc/ssh/sshd_config /etc/ssh/sshd_config_orig
+$ sed -i "s/#PermitRootLogin prohibit-password/PermitRootLogin yes/g" /etc/ssh/sshd_config
+$ sed -i "s/PasswordAuthentication no/PasswordAuthentication yes/g" /etc/ssh/sshd_config
+$ systemctl restart sshd.service
 
 +++++++++++++++ ANSIBLE SERVER ++++++++++++++++++++++
 
-cat /etc/ansible/hosts
+$ cat /etc/ansible/hosts
 
-> /etc/ansible/hosts
+$ > /etc/ansible/hosts
 
-cat /etc/ansible/hosts
+$ cat /etc/ansible/hosts
 
-vim /etc/ansible/hosts
+$ vim /etc/ansible/hosts
 
-[kubernetes]
-<kubernetes_ip>
+    [kubernetes]
+    <kubernetes_ip>
 
-cat /etc/ansible/hosts
+$ cat /etc/ansible/hosts
 
 
-su - jenkins 
-(Here we need to create ssh-key for jenkins users therefore we need to switch to jenkins user as when pipeline is executed as jenkins users) 
+$ su - jenkins 
+( Here we need to create ssh-key for jenkins users therefore 
+ we need to switch to jenkins user as when pipeline 
+ is executed as jenkins users ) 
 
-ansible -m ping kubernetes -u root
+$ ansible -m ping kubernetes -u root
 
-ssh root@<kubernetes_ip>
+$ ssh root@<kubernetes_ip>
 
-ssh-keygen 
+$ ssh-keygen 
 
-ssh-copy-id root@<kubernetes_ip>
+$ ssh-copy-id root@<kubernetes_ip>
 
-ssh root@<kubernetes_ip>
+$ ssh root@<kubernetes_ip>
 
-ansible -m ping kubernetes -u root
+$ ansible -m ping kubernetes -u root
 
 ```
 
