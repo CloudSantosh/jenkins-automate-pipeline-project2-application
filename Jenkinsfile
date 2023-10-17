@@ -36,12 +36,12 @@ pipeline {
       
         stage('SONAR SCANNER') {
             environment {
-            sonar_token = credentials('sonar-cred')
+            sonar_token = credentials('SONAR-TOKEN')
             }
             steps {
                 sh 'mvn clean verify sonar:sonar -e -Dsonar.projectName=$JOB_NAME \
                     -Dsonar.projectKey=$JOB_NAME \
-                    -Dsonar.host.url=http://18.118.27.195:9000 \
+                    -Dsonar.host.url=http://3.128.206.155:9000 \
                     -Dsonar.login=${sonar_token}'
             }
 

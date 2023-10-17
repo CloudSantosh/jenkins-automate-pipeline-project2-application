@@ -111,14 +111,14 @@ $ systemctl restart sshd.service
 +++++++++++++++ ANSIBLE SERVER ++++++++++++++++++++++
 
 $ cat /etc/ansible/hosts
-
+ s
 $ > /etc/ansible/hosts
 
 $ cat /etc/ansible/hosts
 
 $ vim /etc/ansible/hosts
 
-    [kubernetes]
+    [kubernetes] //Here name of the host should only include alphanumeric, hyphens or underscore.
     <kubernetes_ip>
 
 $ cat /etc/ansible/hosts
