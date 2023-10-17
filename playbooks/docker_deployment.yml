@@ -6,6 +6,6 @@
     dockerhub_user: santonepal123/project1:latest
   tasks:
     - name: create container
-      shell: |
-        docker kill javapp
+      shell: 
+        docker rmi -f {{ dockerhub_user }}
         docker run -d --name javapp -p 30000:8080 {{ dockerhub_user }}
