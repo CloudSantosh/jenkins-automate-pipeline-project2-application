@@ -7,4 +7,5 @@
   tasks:
     - name: create container
       shell: |
+        docker kill javapp
         docker run -d --name javapp -p 30000:8080 {{ dockerhub_user }}
