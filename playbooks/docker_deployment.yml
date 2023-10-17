@@ -1,6 +1,6 @@
 ---
 - name: Pulling custome image from dockerhub and deploy container
-  hosts: dockerserver
+  hosts: DockerServer
   remote_user: root
   tasks:
     - name: create container
