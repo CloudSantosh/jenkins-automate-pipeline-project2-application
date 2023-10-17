@@ -194,3 +194,6 @@ The result of the project looks likes below
 <img src="https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application/blob/main/images/pipeline.png" width="700" height="400">
 
 <img src="https://github.com/CloudSantosh/jenkins-automate-pipeline-project2-application/blob/main/images/console.png" width="700" height="400">
+
+# Accessing application 
+http://<dockerIP address>:30000/<application_name>

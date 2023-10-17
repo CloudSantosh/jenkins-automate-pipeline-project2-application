@@ -36,7 +36,7 @@
   </head>
   <body>
     <h1> This is application </h1>
-    <h2> Developer: Santosh Nepali </h2>
+    <h2> Developer: Santosh Nepali The TEch guy</h2>
 
     <br>
     <br>
