@@ -2,7 +2,9 @@
 - name: Pulling custome image from dockerhub and deploy container
   hosts: DockerServer
   remote_user: root
+  vars:
+    dockerhub_user: santonepal123/project1:latest
   tasks:
     - name: create container
       shell: |
-        docker run -d --name javapp -p 30000:8080 {{ dockerhub_user }}/{{ JOB_NAME }}:latest
+        docker run -d --name javapp -p 30000:8080 {{ dockerhub_user }}

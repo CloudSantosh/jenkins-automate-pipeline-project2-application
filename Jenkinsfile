@@ -84,6 +84,10 @@ pipeline {
         }
         */
         stage('DEPLOYMENT ON Docker Server') {
+            environment {
+            dockerhub_user = credentials('DOCKERHUB_USER')            
+            dockerhub_pass = credentials('DOCKERHUB_PASS')
+            }  
             steps {
                 sh 'ansible-playbook $WORKSPACE/playbooks/docker_deployment.yml \
                     --extra-vars "JOB_NAME=$JOB_NAME"'
